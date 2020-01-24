@@ -11,7 +11,6 @@ public class SimpleHTTPServer {
 		System.out.println("Listening for connection on port 8080 ....");
 		while (true) {
 			Socket clientSocket = server.accept();
-			System.out.println("Listening for connection on port 8080 ....");
 			while (true) {
 				try (Socket socket = server.accept()) {
 					Date today = new Date();
